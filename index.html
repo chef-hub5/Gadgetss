@@ -62,7 +62,7 @@
 <body class="bg-white">
     <!-- Utility Header -->
     <div class="bg-black text-white py-1 utility-header">
-        <div class="container mx-auto px-2 flex justify-center items-center text-sm">
+        <div class="container mx-auto px-4 flex justify-center items-center text-sm">
             <div class="flex items-center space-x-4">
                 <span>Free shipping on orders over ₦50,000</span>
             </div>
@@ -657,40 +657,40 @@
         // Sample products data
         const products = {
             phones: [
-                { id: 1, name: 'iPhone 15 Pro', price: 450000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=iPhone+15+Pro', description: 'Latest iPhone with advanced features and premium build quality.', category: 'phones', inStock: true },
-                { id: 2, name: 'Samsung Galaxy S24', price: 380000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Galaxy+S24', description: 'Flagship Samsung phone with excellent camera and performance.', category: 'phones', inStock: false },
-                { id: 3, name: 'Google Pixel 8', price: 320000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Pixel+8', description: 'Pure Android experience with incredible AI photography.', category: 'phones', inStock: true },
-                { id: 4, name: 'OnePlus 12', price: 280000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=OnePlus+12', description: 'Fast charging and smooth performance in a premium package.', category: 'phones', inStock: true }
+                { id: 1, name: 'iPhone 15 Pro', price: 450000, originalPrice: 520000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=iPhone+15+Pro', description: 'Latest iPhone with advanced features and premium build quality.', category: 'phones', inStock: true },
+                { id: 2, name: 'Samsung Galaxy S24', price: 380000, originalPrice: 450000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Galaxy+S24', description: 'Flagship Samsung phone with excellent camera and performance.', category: 'phones', inStock: false },
+                { id: 3, name: 'Google Pixel 8', price: 320000, originalPrice: 380000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Pixel+8', description: 'Pure Android experience with incredible AI photography.', category: 'phones', inStock: true },
+                { id: 4, name: 'OnePlus 12', price: 280000, originalPrice: 330000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=OnePlus+12', description: 'Fast charging and smooth performance in a premium package.', category: 'phones', inStock: true }
             ],
             headphones: [
-                { id: 5, name: 'Sony WH-1000XM5', price: 85000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Sony+WH-1000XM5', description: 'Industry-leading noise cancellation with premium sound quality.', category: 'headphones', inStock: true },
-                { id: 6, name: 'Bose QuietComfort 45', price: 75000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Bose+QC45', description: 'Comfortable over-ear headphones with excellent noise cancellation.', category: 'headphones', inStock: true },
-                { id: 7, name: 'Sennheiser HD 660S', price: 120000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Sennheiser+HD660S', description: 'Audiophile-grade open-back headphones for critical listening.', category: 'headphones', inStock: false },
-                { id: 8, name: 'Audio-Technica ATH-M50x', price: 45000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=ATH-M50x', description: 'Professional monitor headphones trusted by audio professionals.', category: 'headphones', inStock: true }
+                { id: 5, name: 'Sony WH-1000XM5', price: 85000, originalPrice: 105000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Sony+WH-1000XM5', description: 'Industry-leading noise cancellation with premium sound quality.', category: 'headphones', inStock: true },
+                { id: 6, name: 'Bose QuietComfort 45', price: 75000, originalPrice: 95000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Bose+QC45', description: 'Comfortable over-ear headphones with excellent noise cancellation.', category: 'headphones', inStock: true },
+                { id: 7, name: 'Sennheiser HD 660S', price: 120000, originalPrice: 150000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Sennheiser+HD660S', description: 'Audiophile-grade open-back headphones for critical listening.', category: 'headphones', inStock: false },
+                { id: 8, name: 'Audio-Technica ATH-M50x', price: 45000, originalPrice: 55000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=ATH-M50x', description: 'Professional monitor headphones trusted by audio professionals.', category: 'headphones', inStock: true }
             ],
             speakers: [
-                { id: 9, name: 'JBL Charge 5', price: 35000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=JBL+Charge+5', description: 'Portable Bluetooth speaker with powerful bass and long battery life.', category: 'speakers', inStock: true },
-                { id: 10, name: 'Bose SoundLink Revolve+', price: 55000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Bose+Revolve+', description: '360-degree sound with deep bass in a portable design.', category: 'speakers', inStock: false },
-                { id: 11, name: 'Ultimate Ears BOOM 3', price: 28000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=UE+BOOM+3', description: 'Waterproof speaker with 360-degree sound and vibrant colors.', category: 'speakers', inStock: true },
-                { id: 12, name: 'Sonos One', price: 65000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Sonos+One', description: 'Smart speaker with voice control and rich, room-filling sound.', category: 'speakers', inStock: true }
+                { id: 9, name: 'JBL Charge 5', price: 35000, originalPrice: 42000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=JBL+Charge+5', description: 'Portable Bluetooth speaker with powerful bass and long battery life.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Bose SoundLink Revolve+', price: 55000, originalPrice: 68000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Bose+Revolve+', description: '360-degree sound with deep bass in a portable design.', category: 'speakers', inStock: false },
+                { id: 11, name: 'Ultimate Ears BOOM 3', price: 28000, originalPrice: 35000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=UE+BOOM+3', description: 'Waterproof speaker with 360-degree sound and vibrant colors.', category: 'speakers', inStock: true },
+                { id: 12, name: 'Sonos One', price: 65000, originalPrice: 78000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Sonos+One', description: 'Smart speaker with voice control and rich, room-filling sound.', category: 'speakers', inStock: true }
             ],
             airpods: [
-                { id: 13, name: 'AirPods Pro 2', price: 95000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=AirPods+Pro+2', description: 'Active noise cancellation with spatial audio and adaptive transparency.', category: 'airpods', inStock: true },
-                { id: 14, name: 'AirPods 3rd Gen', price: 65000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=AirPods+3', description: 'Spatial audio with dynamic head tracking and sweat resistance.', category: 'airpods', inStock: true },
-                { id: 15, name: 'AirPods Max', price: 185000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=AirPods+Max', description: 'Over-ear headphones with high-fidelity audio and adaptive EQ.', category: 'airpods', inStock: false },
-                { id: 16, name: 'AirPods 2nd Gen', price: 45000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=AirPods+2', description: 'Classic AirPods with reliable connectivity and good sound quality.', category: 'airpods', inStock: true }
+                { id: 13, name: 'AirPods Pro 2', price: 95000, originalPrice: 115000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=AirPods+Pro+2', description: 'Active noise cancellation with spatial audio and adaptive transparency.', category: 'airpods', inStock: true },
+                { id: 14, name: 'AirPods 3rd Gen', price: 65000, originalPrice: 78000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=AirPods+3', description: 'Spatial audio with dynamic head tracking and sweat resistance.', category: 'airpods', inStock: true },
+                { id: 15, name: 'AirPods Max', price: 185000, originalPrice: 220000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=AirPods+Max', description: 'Over-ear headphones with high-fidelity audio and adaptive EQ.', category: 'airpods', inStock: false },
+                { id: 16, name: 'AirPods 2nd Gen', price: 45000, originalPrice: 55000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=AirPods+2', description: 'Classic AirPods with reliable connectivity and good sound quality.', category: 'airpods', inStock: true }
             ],
             ringlights: [
-                { id: 17, name: 'Neewer 18" Ring Light', price: 25000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=18+Ring+Light', description: 'Professional 18-inch ring light with adjustable brightness and color temperature.', category: 'ringlights', inStock: true },
-                { id: 18, name: 'Godox LR160 Ring Light', price: 18000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Godox+LR160', description: 'Compact LED ring light perfect for content creation and photography.', category: 'ringlights', inStock: true },
-                { id: 19, name: 'Yongnuo YN608 Ring Light', price: 32000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=YN608+Ring', description: 'Bi-color LED ring light with wireless remote control.', category: 'ringlights', inStock: false },
-                { id: 20, name: 'Pixel G1s Ring Light', price: 15000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Pixel+G1s', description: 'Portable ring light with phone holder for social media content.', category: 'ringlights', inStock: true }
+                { id: 17, name: 'Neewer 18" Ring Light', price: 25000, originalPrice: 32000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=18+Ring+Light', description: 'Professional 18-inch ring light with adjustable brightness and color temperature.', category: 'ringlights', inStock: true },
+                { id: 18, name: 'Godox LR160 Ring Light', price: 18000, originalPrice: 23000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Godox+LR160', description: 'Compact LED ring light perfect for content creation and photography.', category: 'ringlights', inStock: true },
+                { id: 19, name: 'Yongnuo YN608 Ring Light', price: 32000, originalPrice: 40000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=YN608+Ring', description: 'Bi-color LED ring light with wireless remote control.', category: 'ringlights', inStock: false },
+                { id: 20, name: 'Pixel G1s Ring Light', price: 15000, originalPrice: 20000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Pixel+G1s', description: 'Portable ring light with phone holder for social media content.', category: 'ringlights', inStock: true }
             ],
             chargers: [
-                { id: 21, name: 'Anker PowerPort III', price: 8000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Anker+PowerPort', description: 'Fast USB-C charger with PowerIQ 3.0 technology.', category: 'chargers', inStock: true },
-                { id: 22, name: 'Belkin 3-in-1 Wireless Charger', price: 22000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Belkin+3in1', description: 'Charge iPhone, AirPods, and Apple Watch simultaneously.', category: 'chargers', inStock: true },
-                { id: 23, name: 'RAVPower 20000mAh Power Bank', price: 12000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=RAVPower+20K', description: 'High-capacity power bank with fast charging and multiple ports.', category: 'chargers', inStock: false },
-                { id: 24, name: 'Apple MagSafe Charger', price: 15000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=MagSafe+Charger', description: 'Magnetic wireless charger designed for iPhone 12 and later.', category: 'chargers', inStock: true }
+                { id: 21, name: 'Anker PowerPort III', price: 8000, originalPrice: 12000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Anker+PowerPort', description: 'Fast USB-C charger with PowerIQ 3.0 technology.', category: 'chargers', inStock: true },
+                { id: 22, name: 'Belkin 3-in-1 Wireless Charger', price: 22000, originalPrice: 28000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Belkin+3in1', description: 'Charge iPhone, AirPods, and Apple Watch simultaneously.', category: 'chargers', inStock: true },
+                { id: 23, name: 'RAVPower 20000mAh Power Bank', price: 12000, originalPrice: 16000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=RAVPower+20K', description: 'High-capacity power bank with fast charging and multiple ports.', category: 'chargers', inStock: false },
+                { id: 24, name: 'Apple MagSafe Charger', price: 15000, originalPrice: 20000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=MagSafe+Charger', description: 'Magnetic wireless charger designed for iPhone 12 and later.', category: 'chargers', inStock: true }
             ]
         };
 
@@ -812,13 +812,21 @@
                 ? `<button onclick="event.stopPropagation(); quickAddToCart(${product.id})" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">Add to Cart</button>`
                 : `<button class="bg-gray-400 text-white px-4 py-2 rounded cursor-not-allowed" disabled>Out of Stock</button>`;
 
+            const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+
             card.innerHTML = `
                 <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="font-bold text-lg mb-2">${product.name}</h3>
                     <p class="text-gray-600 text-sm mb-3">${product.description.substring(0, 80)}...</p>
                     <div class="flex justify-between items-center">
-                        <span class="text-xl font-bold text-black">₦${product.price.toLocaleString()}</span>
+                        <div class="flex flex-col">
+                            <div class="flex items-center space-x-2">
+                                <span class="text-xl font-bold text-black">₦${product.price.toLocaleString()}</span>
+                                <span class="text-sm text-gray-500 line-through">₦${product.originalPrice.toLocaleString()}</span>
+                            </div>
+                            <span class="text-xs text-green-600 font-medium">${discount}% OFF</span>
+                        </div>
                         ${addToCartButton}
                     </div>
                 </div>
@@ -857,7 +865,15 @@
             document.getElementById('productTitle').textContent = product.name;
             document.getElementById('productImage').src = product.image;
             document.getElementById('productDescription').textContent = product.description;
-            document.getElementById('productPrice').textContent = `₦${product.price.toLocaleString()}`;
+            
+            const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100);
+            document.getElementById('productPrice').innerHTML = `
+                <div class="flex items-center space-x-3">
+                    <span class="text-3xl font-bold text-black">₦${product.price.toLocaleString()}</span>
+                    <span class="text-lg text-gray-500 line-through">₦${product.originalPrice.toLocaleString()}</span>
+                </div>
+                <div class="text-sm text-green-600 font-medium">${discount}% OFF</div>
+            `;
             document.getElementById('productQuantity').textContent = currentQuantity;
             
             const addToCartBtn = document.getElementById('addToCartBtn');
@@ -1334,5 +1350,5 @@
         // Initialize the website when page loads
         document.addEventListener('DOMContentLoaded', init);
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'983589ed45763a72',t:'MTc1ODU4MzI4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9835b1d1c2052ba3',t:'MTc1ODU4NDkyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
