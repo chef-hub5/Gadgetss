@@ -64,7 +64,7 @@
     <div class="bg-black text-white py-1 utility-header">
         <div class="container mx-auto px-4 flex justify-center items-center text-sm">
             <div class="flex items-center space-x-4">
-                <span>Free shipping on orders over ₦50,000</span>
+                <span>Free shipping on orders over ₦150,000</span>
             </div>
             <div class="flex items-center space-x-4">
                 <div class="relative">
@@ -105,8 +105,10 @@
                             <button onclick="showCategoryPage('headphones')" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Headphones</button>
                             <button onclick="showCategoryPage('speakers')" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Speakers</button>
                             <button onclick="showCategoryPage('airpods')" class="block w-full text-left px-4 py-2 hover:bg-gray-100">AirPods</button>
-                            <button onclick="showCategoryPage('ringlights')" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Ring Lights</button>
                             <button onclick="showCategoryPage('chargers')" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Chargers</button>
+                            <button onclick="showCategoryPage('ringlights')" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Ring Lights</button>
+                            <button onclick="showCategoryPage('tripod')" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Tripod</button>
+                            <button onclick="showCategoryPage('others')" class="block w-full text-left px-4 py-2 hover:bg-gray-100">Others</button>
                         </div>
                     </div>
                     
@@ -287,7 +289,7 @@
                     
                     <div>
                         <h2 class="text-2xl font-bold mb-4">Free Shipping</h2>
-                        <p class="text-gray-600 mb-4">Enjoy free standard shipping on orders over ₦50,000 to any location in Nigeria.</p>
+                        <p class="text-gray-600 mb-4">Enjoy free standard shipping on orders over ₦150,000 to any location in Nigeria.</p>
                     </div>
                     
                     <div>
@@ -295,10 +297,10 @@
                         <p class="text-gray-600 mb-4">Orders are processed within 24 hours on business days. Orders placed on weekends will be processed on the next business day.</p>
                     </div>
                     
-                    <div>
+                    <!-- <div>
                         <h2 class="text-2xl font-bold mb-4">Tracking</h2>
                         <p class="text-gray-600 mb-4">You will receive a tracking number via SMS and email once your order ships. Track your package in real-time through our website.</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -578,7 +580,7 @@
                         <h3 class="text-xl font-bold">King Bobby</h3>
                     </div>
                     <p class="text-gray-400 mb-4">Premium tech accessories for the modern lifestyle.</p>
-                    <a href="https://instagram.com/iykslot" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">
+                    <a href="https://www.instagram.com/kingbobby_gadgets?igsh=YzY4Zjg0cmtsZ2dx" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white">
                         <i class="fab fa-instagram text-2xl"></i>
                     </a>
                 </div>
@@ -659,45 +661,89 @@
             phones: [
                 { id: 1, name: 'XIAOMI Redmi A3x 6.71" 3GB RAM/64GB ROM Android 14, ', price: 145000, originalPrice: 147000, image: 'HD/Redmi A3x.webp', description: 'Sleek and elegant good user interface long lasting battery.', category: 'phones', inStock: true },
                 { id: 2, name: 'Samsung Galaxy A06 4GB RAM + 128GB ROM BLACK', price: 195000, originalPrice: 198000, image: 'HD/samsung.jpg', description: 'Flagship Samsung phone with excellent camera and performance.', category: 'phones', inStock: true },
-                { id: 3, name: 'XIAOMI Redmi 14C 6.88, 8GB RAM + 256GB ROM Android 12', price: 185000, originalPrice: 187000, image: 'HD/redmi 14c.jpg', description: 'Flagship Samsung phone with excellent camera and performance.', category: 'phones', inStock: true },
+                { id: 4, name: 'XIAOMI REDMI A5 - 6.88" 4GB RAM + 128GB ROM -Android 15--Dual Sim - 5200mAh', price: 160000, originalPrice: 168000, image: 'phones/XIAOMI REDMI A5.jpg', description: 'XIAOMI REDMI A5 - 6.88" 4GB RAM + 128GB ROM -Android 15--Dual Sim - 5200mAh.', category: 'phones', inStock: true },
+                { id: 4, name: 'XIAOMI REDMI A5 - 6.88 3GB RAM/64GB ROM', price: 150000, originalPrice: 158000, image: 'phones/XIAOMI REDMI A5....jpg', description: 'Battery & Charging:5200mAh battery (typ)Supports 15W fast charging*Power adapter is sold separately in certain regions. USB Type-C, Security: Side fingerprint sensor AI face unlock.', category: 'phones', inStock: true },
+                { id: 3, name: 'Infinix Smart 8 - 6.6" (64GB/2+2GB) 4G Dual SIM, 5000mAh', price: 190000, originalPrice: 195000, image: 'phones/Infinix Smart 8.jpg', description: 'Size: 6.6 inches, 90Hz refresh rate, RAM: 2GB + 2GB - Storage: 64GB, 5000 mAh non-removable; Lithium Polymer', category: 'phones', inStock: true },
+                { id: 3, name: 'XIAOMI Redmi 14C 6.88, 4GB RAM + 128GB ROM Android 12', price: 180000, originalPrice: 185000, image: 'phones/Redmi 14C 180k.jpg', description: 'Flagship Samsung phone with excellent camera and performance.', category: 'phones', inStock: true },
+                { id: 3, name: 'Samsung Galaxy A06 4GB RAM + 64GB ROM BLACK', price: 190000, originalPrice: 195000, image: 'phones/Samsung Galaxy.jpg', description: 'Flagship Samsung phone with excellent camera and performance, Android 14 Mediatek Helio G85 6.7 Inches 5000 Mah Fingerprint (side-mounted)', category: 'phones', inStock: true },
+                { id: 3, name: 'XIAOMI Redmi A3x (3GB RAM + 64GB ROM) Android 14 Black', price: 140000, originalPrice: 145000, image: 'phones/XIAOMI Redmi A3x (3GB RAM + 64GB ROM) Android 14 Black.jpg', description: 'Screen: 6.71-Inch Display, Dual SIM, 3GB RAM; 64GB ROM,  Android 14,  8MP +  5MP Selfie,  Fingerprint, 4G, Non-removable Li-Po 5000mAh Battery', category: 'phones', inStock: true },
                 { id: 4, name: 'Infinix Smart 9 6.7', price: 150000, originalPrice: 158000, image: 'HD/infinix.webp', description: 'Pure Android experience with incredible AI photography.', category: 'phones', inStock: true },
-                { id: 5, name: 'OnePlus 12', price: 280000, originalPrice: 330000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=OnePlus+12', description: 'Fast charging and smooth performance in a premium package.', category: 'phones', inStock: true }
+                { id: 5, name: 'XIAOMI Redmi A3 Pro - 6.88" (128GB/4GB) 4G Dual SIM -Fingerprint - 5160mAh', price: 280000, originalPrice: 330000, image: 'phones/Redmi A3 pro.jpg', description: 'XIAOMI Redmi A3 Pro - 6.88" (128GB/4GB) 4G Dual SIM -Fingerprint - 5160mAh.', category: 'phones', inStock: true }
             ],
             headphones: [
                 { id: 6, name: 'JBL Powerful Bass Wireless Headphone, JB7700', price: 25000, originalPrice: 30000, image: 'headphones/new.jpg', description: 'Industry-leading noise cancellation with premium sound quality.', category: 'headphones', inStock: true },
                 { id: 6, name: 'Cat Ear Headphone, B39m', price: 20000, originalPrice: 25000, image: 'headphones/cat ear 1.webp', description: 'Comfortable over-ear headphones with excellent noise cancellation.', category: 'headphones', inStock: true },
                 { id: 6, name: 'SY-T1 Bluetooth Over Ear Headphone', price: 35000, originalPrice: 37000, image: 'HD/IMG-20250922-WA0011.jpg', description: 'Compact Design, Flexible Connection, Easy Controlling.', category: 'headphones', inStock: true },
+                { id: 10, name: 'Bose, Quiet Comfort Ultra', price: 55000, originalPrice: 58000, image: 'New folder/Bose, Quiet Comfort Ultra.jpg', description: 'Bose, Quiet Comfort Ultra Headphones.', category: 'headphones', inStock: true },
+                { id: 10, name: 'JBL Active Noise Cancelling Headphones', price: 55000, originalPrice: 58000, image: 'New folder/JBL Active Noise Cancelling Headphones.jpg', description: 'JBL Active Noise Cancelling Headphones, Bluetooth, 20H Battery Life.', category: 'headphones', inStock: true },
+                { id: 10, name: 'JBL Tour One M2 headphones', price: 45000, originalPrice: 48000, image: 'New folder/JBL Tour One M2 headphones.jpg', description: 'Portable headphones with powerful bass and long battery life.', category: 'headphones', inStock: true },
+                { id: 10, name: 'Beats x Kim(beats studio pro)', price: 65000, originalPrice: 68000, image: 'New folder/Beats x Kim(beats studio pro).jpg', description: 'Portable headphones with powerful bass and long battery life.', category: 'headphones', inStock: true },
                 { id: 6, name: 'Wireless Bluetooth Headphones', price: 25000, originalPrice: 27000, image: 'HD/e650.jpg', description: 'Bluetooth Wireless Headphones, for Phone PC Laptop Over Ear Noise Cancellation.', category: 'headphones', inStock: true },
                 { id: 7, name: 'Oraimo BoomPop2S ENC Over-Ear Wireless Headphones', price: 75000, originalPrice: 78000, image: 'headphones/oraimo.jpg', description: 'Over-Ear Wireless Headphones for critical listening.', category: 'headphones', inStock: true },
                 { id: 8, name: 'SHPLUS HEADPHONE, SH-C780BT', price: 25000, originalPrice: 30000, image: 'HD/SHPLUS HEADPHONE, SH-C780BT.jpg', description: 'High definition speakers bring clear sound and amazing feeling.', category: 'headphones', inStock: true }
             ],
             speakers: [
-                { id: 9, name: 'JBL Charge 5', price: 35000, originalPrice: 42000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=JBL+Charge+5', description: 'Portable Bluetooth speaker with powerful bass and long battery life.', category: 'speakers', inStock: true },
-                { id: 10, name: 'Bose SoundLink Revolve+', price: 55000, originalPrice: 68000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Bose+Revolve+', description: '360-degree sound with deep bass in a portable design.', category: 'speakers', inStock: true },
-                { id: 11, name: 'Ultimate Ears BOOM 3', price: 28000, originalPrice: 35000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=UE+BOOM+3', description: 'Waterproof speaker with 360-degree sound and vibrant colors.', category: 'speakers', inStock: true },
-                { id: 12, name: 'Sonos One', price: 65000, originalPrice: 78000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Sonos+One', description: 'Smart speaker with voice control and rich, room-filling sound.', category: 'speakers', inStock: true }
+                { id: 9, name: 'Boombest Speaker-LN-1016BT.jpg', price: 40000, originalPrice: 42000, image: 'speakers/boombest ln-1016bt.jpg', description: 'Portable Boombest speaker with powerful bass and long battery life.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Zealot P11 RGB HIFI STEREO BLUETOOTH SPEAKER', price: 140000, originalPrice: 142000, image: 'speakers/zealot p11.jpg', description: 'For indoor and outdoor activities, Strong Bluetooth speaker, Large battery capacity, Longer play time.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Zealot P12 RGB HIFI STEREO BLUETOOTH SPEAKER', price: 150000, originalPrice: 152000, image: 'speakers/zealot p12.jpg', description: 'For indoor and outdoor activities, Strong Bluetooth speaker, Large battery capacity, Longer play time.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Zealot S27 Super Bass Wireless Loud Bluetooth Speaker', price: 130000, originalPrice: 132000, image: 'speakers/zealot-s27-super-bass-wireless-loud-bluetooth-speaker.webp', description: 'POWERFUL SPEAKERS WITH BREADTH-TAKING STRONG BASS AND SURROUND SOUND, Bluetooth version: 5.0, Transmission distance: about 10m, Listening to music time: about 8H.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Zealot New Zealot S37L Heavy Bass 3D Wireless Bluetooth Speaker', price: 130000, originalPrice: 132000, image: 'speakers/s37.jpg', description: 'POWERFUL SPEAKERS WITH BREADTH-TAKING STRONG BASS AND SURROUND SOUND, Bluetooth version: 5.0, Transmission distance: about 10m, Listening to music time: about 8H.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Zealot S51 Portable Wireless Bluetooth Speaker IPX5 Waterproof', price: 35000, originalPrice: 36000, image: 'speakers/s51.jpg', description: 'ZEALOT S51 Portable BT Speaker Outdoor 10W TWS Connection High Quality Sound IPX5 Waterproof 8 hours use time Speaker.', category: 'speakers', inStock: true },
+                { id: 10, name: 'zealot-s64-shocking-sound-super-subwoofer-bluetooth-speaker-with-rgb-light', price: 135000, originalPrice: 136000, image: 'speakers/zealot-s64-shocking-sound-super-subwoofer-bluetooth-speaker-with-rgb-light.jpg', description: 'ZEALOT S51 Portable BT Speaker Outdoor 10W TWS Connection High Quality Sound IPX5 Waterproof 8 hours use time Speaker.', category: 'speakers', inStock: true },
+                { id: 10, name: 'zealot-s67-shocking-sound-super-subwoofer-bluetooth-speaker', price: 135000, originalPrice: 136000, image: 'speakers/zealot s67.jpg', description: 'The combination of three major speakers and dual bass diaphragms brings the extraordinary sound quality, 60W high power output, high volume and powerful sound.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Zealot S97 80W High Power Wireless Speaker', price: 165000, originalPrice: 166000, image: 'speakers/s97.jpg', description: 'Built-in 16000mAh Battery and RGB Lighting, Compatible with Memory Card/USB Stick/AUX/TWS Stereo Sound Subwoofer.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Boombest Speaker-LN-1036BT.jpg', price: 45000, originalPrice: 48000, image: 'speakers/boombest ln-1036bt.jpg', description: 'Portable Boombest speaker with powerful bass and long battery life.', category: 'speakers', inStock: true },
+                { id: 10, name: 'Zealot S38 Portable Wireless Speaker With BT 5.0 Technology.jpg', price: 75000, originalPrice: 76000, image: 'speakers/zealot bass wireless speaker 2.jpg', description: '3D HIFI Stereo Sound, Shocking Bass, Portable Design, Large Battery Capacity: 1800mah large battery.', category: 'speakers', inStock: true },
+                { id: 11, name: 'Portable speaker model C56', price: 150000, originalPrice: 152000, image: 'speakers/Portable speaker model c56.jpg', description: 'Portable C56 speaker, compact and powerful. Balanced sound wherever you go.', category: 'speakers', inStock: true },
+                { id: 12, name: 'Portable speaker model C57', price: 80000, originalPrice: 82000, image: 'speakers/Portable speaker model c57.jpg', description: 'Portable C56 speaker, compact and powerful. Balanced sound wherever you go.', category: 'speakers', inStock: true }
             ],
             airpods: [
                 { id: 13, name: 'Frezzil Air 14 Pro Wireless Bluetooth Earpod', price: 30000, originalPrice: 32000, image: 'Air/tws.jpg', description: 'Active noise cancellation with spatial audio and adaptive transparency.', category: 'airpods', inStock: true },
-                { id: 14, name: 'Oraimo SpacePods X Burna Boy', price: 90000, originalPrice: 93000, image: 'Air/oraimo 3a.jpg', description: 'oraimo SpacePods x Burna Boy ANC True Wireless Earbuds-Moonlight Edition · BT 5.2-Simultaneous · 35.5-Hr Long Playtime · PE2.0 & QC3.0 Compatible · 8-Hr Playtime..', category: 'airpods', inStock: true },
+                { id: 14, name: 'JBL S9 airpod.', price: 25000, originalPrice: 27000, image: 'New folder/JBL S9 Airpod.jpg', description: 'oraimo SpacePods x Burna Boy ANC True Wireless Earbuds-Moonlight Edition · BT 5.2-Simultaneous · 35.5-Hr Long Playtime · PE2.0 & QC3.0 Compatible · 8-Hr Playtime..', category: 'airpods', inStock: true },
                 { id: 14, name: 'Oraimo SpacePods X Burna Boy', price: 90000, originalPrice: 93000, image: 'Air/oraimo 3a.jpg', description: 'oraimo SpacePods x Burna Boy ANC True Wireless Earbuds-Moonlight Edition · BT 5.2-Simultaneous · 35.5-Hr Long Playtime · PE2.0 & QC3.0 Compatible · 8-Hr Playtime..', category: 'airpods', inStock: true },
                 { id: 14, name: 'Samsung Wireless Earpod Air 12pro With Inbuilt Power Bank', price: 15000, originalPrice: 17000, image: 'Air/WhatsApp Image 2025-09-22 at 19.27.03_cf9ca455.jpg', description: 'Spatial audio with dynamic head tracking and sweat resistance.', category: 'airpods', inStock: true },
                 { id: 14, name: 'Samsung K35 Clip-on Bone Conduction Wireless Bluetooth Earbud', price: 25000, originalPrice:  26000, image: 'Air/samsung k35.jpg', description: 'Open-ear clip Bone Conduction Wireless Bluetooth  true earphones, using bone conduction, no longer worried about ear pain; Stereo output, noise reduction, HIFI lossless sound quality, and long battery life.More Bluetooth earphones.', category: 'airpods', inStock: true },
                 { id: 15, name: 'JBL Wireless Earpod Air F9 with 2200mAh Powerbank', price: 20000, originalPrice: 22000, image: 'Air/powerbank.jpg', description: 'Airpod with high-fidelity audio and adaptive EQ.', category: 'airpods', inStock: true },
+                { id: 15, name: 'JBL Tune S500', price: 25000, originalPrice: 27000, image: 'New folder/JBL Tune S500.jpg', description: 'Experience the future of audio with the earphones. These sleek and stylish earphones deliver exceptional sound quality.', category: 'airpods', inStock: true },
+                { id: 15, name: 'Wireless Earphones Pro3', price: 10000, originalPrice: 11000, image: 'Air/Wireless Earphones Pro3.jpg', description: 'Experience the future of audio with the earphones. These sleek and stylish earphones deliver exceptional sound quality.', category: 'airpods', inStock: true },
+                { id: 15, name: 'Sterio True Wireless earphones-M115', price: 37000, originalPrice: 38000, image: 'Air/Sterio True Wireless earphones-M115.jpg', description: 'Sterio True Wireless earphones-M115 with stereoscopic sound effects and led display screen-V5.49.', category: 'airpods', inStock: true },
+                { id: 15, name: 'Mini Pro 5s Tws Bluetooth 5.0 Earphones', price: 20000, originalPrice: 21000, image: 'Air/Mini Pro 5s Earphones.webp', description: 'Mini Pro 5s Tws Bluetooth 5.0 Earphones With Touch Control - 300mAh.', category: 'airpods', inStock: true },
+                { id: 15, name: 'Wireless Mic EarBods', price: 28000, originalPrice: 30000, image: 'New folder/2 Wireless Mic EarBods.jpg', description: 'Airpod with high-fidelity audio and adaptive EQ.', category: 'airpods', inStock: true },
                 { id: 15, name: 'Oraimo AirPods', price: 95000, originalPrice: 97000, image: 'Air/Oraimo 2.jpg', description: 'Airpod with high-fidelity audio and adaptive EQ.', category: 'airpods', inStock: true },
                 { id: 16, name: 'Oraimo AirPods', price: 60000, originalPrice: 62000, image: 'Air/Oraimo-Freepods-4-scaled.jpg', description: 'Classic AirPods with reliable connectivity and good sound quality.', category: 'airpods', inStock: true }
             ],
             ringlights: [
-                { id: 17, name: 'Neewer 18" Ring Light', price: 25000, originalPrice: 32000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=18+Ring+Light', description: 'Professional 18-inch ring light with adjustable brightness and color temperature.', category: 'ringlights', inStock: true },
-                { id: 18, name: 'Godox LR160 Ring Light', price: 18000, originalPrice: 23000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Godox+LR160', description: 'Compact LED ring light perfect for content creation and photography.', category: 'ringlights', inStock: true },
-                { id: 19, name: 'Yongnuo YN608 Ring Light', price: 32000, originalPrice: 40000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=YN608+Ring', description: 'Bi-color LED ring light with wireless remote control.', category: 'ringlights', inStock: true },
-                { id: 20, name: 'Pixel G1s Ring Light', price: 15000, originalPrice: 20000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Pixel+G1s', description: 'Portable ring light with phone holder for social media content.', category: 'ringlights', inStock: true }
+                { id: 17, name: 'Rohs 18 (45CM) Inches RGB Ring Light With Bag', price: 40000, originalPrice: 42000, image: 'New folder/45cm 18 RGB Led Light.jpg', description: 'Professional 18 (45cm) inch ring light with adjustable brightness and color temperature.', category: 'ringlights', inStock: true },
+                { id: 18, name: '56cm22 RGB Led Light', price: 18000, originalPrice: 23000, image: 'New folder/56cm22 RGB Led Light.jpg', description: 'Compact LED ring light perfect for content creation and photography.', category: 'ringlights', inStock: true },
+                { id: 19, name: 'Professional Photo & Video Led Light Kit 600', price: 36000, originalPrice: 37000, image: 'New folder/Professional Photo & Video Led Light Kit 600.jpg', description: 'Professional Photo & Video Led Light Kit 600.', category: 'ringlights', inStock: true },
+                { id: 20, name: 'Professional Photo & Video Led Light Kit 300', price: 60000, originalPrice: 63000, image: 'last/Pro light 300.jpg', description: 'New folder/Professional Photo & Video Led Light Kit 600.', category: 'ringlights', inStock: true }
             ],
             chargers: [
                 { id: 21, name: 'JBL 2200mAh Powerbank', price: 20000, originalPrice: 22000, image: 'Air/powerbank.jpg', description: 'Fast Airpod charger.', category: 'chargers', inStock: true },
-                { id: 22, name: 'Belkin 3-in-1 Wireless Charger', price: 22000, originalPrice: 28000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=Belkin+3in1', description: 'Charge iPhone, AirPods, and Apple Watch simultaneously.', category: 'chargers', inStock: true },
-                { id: 23, name: 'RAVPower 20000mAh Power Bank', price: 12000, originalPrice: 16000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=RAVPower+20K', description: 'High-capacity power bank with fast charging and multiple ports.', category: 'chargers', inStock: true },
-                { id: 24, name: 'Apple MagSafe Charger', price: 15000, originalPrice: 20000, image: 'https://via.placeholder.com/300x300/000000/FFFFFF?text=MagSafe+Charger', description: 'Magnetic wireless charger designed for iPhone 12 and later.', category: 'chargers', inStock: true }
+                { id: 22, name: '4 in 1 R11 Wireless Charger', price: 45000, originalPrice: 46700, image: 'New folder/4 in 1 R11 Wireless Charger.jpg', description: 'Multifunctional Wireless Charger, 4 in 1 fashion and Simplicity.', category: 'chargers', inStock: true },
+                { id: 23, name: '45W PD Adapter', price: 10000, originalPrice: 12000, image: 'New folder/45W PD Adapter.jpg', description: 'High-capacity charger with USB-C to USB-C cable (5A).', category: 'chargers', inStock: true },
+                { id: 24, name: '120WUSB-C Power Adapter', price: 20000, originalPrice: 24000, image: 'New folder/120WUSB-C Power Adapter .jpg', description: 'Magnetic wireless charger designed for iPhone.', category: 'chargers', inStock: true }
+            ],
+             tripod: [
+                { id: 21, name: '360 Auto Face Tracking Selfie Stick Tripod', price: 45000, originalPrice: 50000, image: 'New folder/360 Auto Face Tracking Selfie Stick Tripod.jpg', description: 'New folder/360 Auto Face Tracking Selfie Stick Tripod.jpg.', category: 'tripods', inStock: true },
+                { id: 22, name: '3366 Tripod', price: 22000, originalPrice: 28000, image: 'New folder/3366 Tripod.jpg', description: '3366 Tripod.', category: 'tripods', inStock: true },
+                { id: 19, name: 'Stable balance video photography tripod', price: 35000, originalPrice: 37000, image: 'New folder/Selfie Stick L16.jpg', description: 'Stable balance video photography tripod.', category: 'ringlights', inStock: true },
+                { id: 24, name: 'NeePho 910A Tripod Stand Retractable Height Camera Tripod', price: 15000, originalPrice: 20000, image: 'last/NeePho 910A Tripod Stand Retractable Height Camera Tripod.jpg', description: 'NeePho 910A Tripod Stand Retractable Height Camera Tripod.', category: 'tripods', inStock: true }
+            ],
+            others: [
+                { id: 21, name: '25W PD Adapter', price: 20000, originalPrice: 22000, image: 'New folder/25W PD Adapter .jpg', description: 'USB-C to USB-C.', category: 'others', inStock: true },
+                { id: 22, name: 'Camera Track, The Smart Personal Robot-Cameraman', price: 30000, originalPrice: 35000, image: 'New folder/Camera Track, The Smart Personal Robot-Cameraman.jpg', description: 'Camera Track, The Smart Personal Robot-Cameraman', category: 'others', inStock: true },
+                { id: 23, name: 'Lava Volcano Aromatherapy Machine', price: 45000, originalPrice: 48000, image: 'New folder/Lava Volcano Aromatherapy Machine.jpg', description: 'Lava Volcano Aromatherapy Machine', category: 'others', inStock: true },
+                { id: 23, name: '3 Axis Foldable Gimbal', price: 165000, originalPrice: 170000, image: 'last/3 Axis Foldable Gimbal.jpg', description: '3 Axis Foldable Gimbal.', category: 'others', inStock: true },
+                { id: 23, name: '4 in 1 Wireless Charger', price: 50000, originalPrice: 550000, image: 'last/4 in 1 Wireless Charger.jpg', description: '4 in 1 Wireless Charger.', category: 'others', inStock: true },
+                { id: 23, name: '55000 New Age Polymer Powerbank', price: 60000, originalPrice: 60000, image: 'last/55000 New Age Polymer Powerbank.jpg', description: '55000 New Age Polymer Powerbank.', category: 'others', inStock: true },
+                { id: 23, name: '66000 Polymer Power Bank, 22.5W, 4Ports', price: 75000, originalPrice: 79000, image: 'last/66000 Polymer Power Bank, 22.5W, 4Ports.jpg', description: '66000 Polymer Power Bank, 22.5W, 4Ports.', category: 'others', inStock: true },
+                { id: 23, name: 'Smart Glasses', price: 170000, originalPrice: 175000, image: 'New folder/Smart Glasses.jpg', description: 'Smart Glasses.', category: 'others', inStock: true },
+                { id: 23, name: 'F11-2 Wireless Microphone', price: 45000, originalPrice: 47000, image: 'last/F11-2 Wireless Microphone .jpg', description: 'F11-2 Wireless Microphone.', category: 'others', inStock: true },
+                { id: 23, name: 'K11 wireless microphone', price: 25000, originalPrice: 28000, image: 'New folder/K11 wireless microphone.jpg', description: 'K11 wireless microphone, plug and play, 20 meters of accessible reception,precise radio, clear timbre, highly sensitive and widely compatible', category: 'others', inStock: true },
+                { id: 23, name: 'i90 Ultra Smart Watch', price: 115000, originalPrice: 120000, image: 'New folder/i90 Ultra Smart Watch.jpg', description: 'i90 Ultra Smart Watch', category: 'others', inStock: true },
+                { id: 23, name: 'D55 Ultra Max Extreme Suit', price: 105000, originalPrice: 106000, image: 'New folder/D55 Ultra Max Extreme Suit.jpg', description: 'D55 Ultra Max Extreme Suit.', category: 'others', inStock: true },
+                { id: 24, name: 'D97PLUS 7 in 3 Set', price: 70000, originalPrice: 73000, image: 'New folder/D97PLUS 7 in 3 Set.jpg', description: 'D97PLUS 7 in 3 Set.', category: 'others', inStock: true }
             ]
         };
 
